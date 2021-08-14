@@ -27,12 +27,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*________________________________________*/
 .bodyHome{
     position: relative;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 .bodyContactus{
     position: relative;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 /*fonts_______________*/
@@ -63,44 +63,35 @@ body{
 
 /*nav________________*/
 .nav{
-    position: absolute;
-    top: 0px;
     height: 609px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
 }
-.nav p{
-    color: rgba(74, 153, 211, 1);
-    font-size: 18px;
-}
-nav p a{
-    color: rgba(15, 0, 26, 1);
-    font-size: 18px;
+.navLogo{
+margin: 45px 0 0 0;
+z-index: 3;
 }
 .navLogo a{
-    position: absolute;
-    top: 45px;
-    left: 245px;
     color: rgba(74, 153, 211, 1);
     font-size: 40px;
     font-Weight: 700;
+}
+.navLinks{
+    margin: 60px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
     z-index: 3;
 }
-.navHome{
-    position: absolute;
-    top: 60px;
-    left: 883px;
-    z-index: 3;
+.navLinks p{
+    color: rgba(74, 153, 211, 1);
+    font-size: 18px;
+    margin: 0 50px;
 }
-.navAbout{
-    position: absolute;
-    top: 60px;
-    left: 987px;
-    z-index: 3;
-}
-.navContact{
-    position: absolute;
-    top: 60px;
-    left: 1092px;
+.navLinks p a{
+    color: rgba(15, 0, 26, 1);
+    font-size: 18px;
     z-index: 3;
 }
 .navBacgroundContact{
@@ -112,7 +103,7 @@ nav p a{
     left: 0px;
     width: 100%;
     height: 609px;
-    z-index: 0;
+    z-index: 1;
 }
 .navBacgroundHome{
     background: linear-gradient(1.02deg, #4A99D3 -17.33%, rgba(74, 153, 211, 0) 75.91%), #FFFFFF;
@@ -124,7 +115,7 @@ nav p a{
     left: 0px;
     width: 100%;
     height: 768px;
-    z-index: 0;
+    z-index: 1;
 }
 /*nav_end____________*/
 
@@ -137,21 +128,22 @@ nav p a{
     width: 100%;
     height: 350px;
     color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .footerTop{
     width: 100%;
     height: 292px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 55px 0 0 0;
 }
 .footerTop div{
     font-size: 34px;
-    position: absolute;
-    margin: 55.34px 0 0 124px;
 }
-
 .footerLinks{
-    position:absolute;
-    left: 378px;
-    top: 55.34px;
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 400;
@@ -169,9 +161,6 @@ nav p a{
     margin: 0 0 3px 0;
 }
 .footerOthers{
-    position:absolute;
-    left: 545px;
-    top: 55.34px;
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 400;
@@ -189,9 +178,6 @@ nav p a{
     margin: 0 0 3px 0;
 }
 .footerProducts{
-    position:absolute;
-    left: 760px;
-    top: 55.34px;
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 400;
@@ -209,9 +195,7 @@ nav p a{
     margin: 0 0 3px 0;
 }
 .formFooter{
-    position:absolute;
-    top: 55.34px;
-    left: 922px;
+    display: block;
     font-size: 18px;
     font-weight: 400;
 }
@@ -240,17 +224,17 @@ nav p a{
 .footerBottom{
     width: 100%;
     height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 1);
 }
 .footerBottom p{
-    position: absolute;
-    left: 8.61%;
-    top: 90%;
+    margin: 0 0 0 9%;
     font-weight: 700;
 }
 .footerBottom div{
-    position: absolute;
-    right: 8.62%; 
+    margin: 0 8.62% 0 0; 
     top: 90%;
 }
 .footerBottom div a{
