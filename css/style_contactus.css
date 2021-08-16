@@ -147,12 +147,7 @@
     display: block;
     margin: 0 25px 0 0;
 }
-.contactContein::before{
-    content: "";
-    display: block;
-    position: relative;
-    top: -77px;
-    left: 881px;
+.dottedRight{
     z-index: 1;
     height: 154px;
     width: 154px;
@@ -161,14 +156,12 @@
     background-position: 0% 0%;
     background-size: 154px 154px;
     overflow: visible;
-    border: greenyellow 1px solid;
-}
-.contactContein::after{
-    content: "";
     position: relative;
-    top: -77px;
-    left: -77px;
-    display: block;
+    left: 77px;
+    top: 242px;
+
+}
+.dottedLeft{
     z-index: 1;
     height: 154px;
     width: 154px;
@@ -176,9 +169,10 @@
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-size: 154px 154px;
-    border: red 1px solid;
+    position: relative;
+    right: 77px;
+    bottom: 396px;
 }
-
 .contactSquareBlueLeft{
     background-image: url("../img/squaresBlueDown.png");
     position: absolute;
