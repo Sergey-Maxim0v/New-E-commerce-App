@@ -240,4 +240,10 @@ body{
 .footerBottom div a{
     margin: 0 10px;
 }
+.footerSubmitbutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 404px;
+}
 /*footer_end_____________________*/
