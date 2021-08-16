@@ -3,10 +3,538 @@
 
 <head>
     <title>New E-commerce App | Contact Us</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="css/style_home.css">
-    <link rel="stylesheet" href="css/style_contactus.css">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        *,
+        *:before,
+        *::after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        :focus,
+        :active {
+            outline: none;
+        }
+
+        a:footer,
+        header,
+        aside {
+            display: block;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        input,
+        button,
+        textarea {
+            font-family: inherit;
+        }
+
+        input::-ms-clear {
+            display: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: 400;
+        }
+
+        /*________________________________________*/
+        .bodyHome {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .bodyContactus {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*fonts_______________*/
+        @font-face {
+            font-family: objective;
+            font-weight: 400;
+            src: url(../fonts/Objective_Woff2/Objective-Regular.woff2);
+        }
+        @font-face {
+            font-family: objective;
+            font-weight: 500;
+            src: url(../fonts/Objective_Woff2/Objective-Medium.woff2);
+        }
+        @font-face {
+            font-family: objective;
+            font-weight: 600;
+            src: url(../fonts/Objective_Woff2/Objective-Medium.woff2);
+        }
+        @font-face {
+            font-family: objective;
+            font-weight: 700;
+            src: url(../fonts/Objective_OTF/Objective-Bold.otf);
+        }
+        body {
+            font-family: objective;
+        }
+
+        /*fonts_end___________*/
+
+        /*nav________________*/
+        .nav {
+            height: 609px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .navLogo {
+            margin: 45px 0 0 0;
+            z-index: 3;
+        }
+        .navLogo a {
+            color: rgba(74, 153, 211, 1);
+            font-size: 40px;
+            font-Weight: 700;
+        }
+        .navLinks {
+            margin: 60px 0 0 0;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 3;
+        }
+        .navLinks p {
+            color: rgba(74, 153, 211, 1);
+            font-size: 18px;
+            margin: 0 50px;
+        }
+        .navLinks p a {
+            color: rgba(15, 0, 26, 1);
+            font-size: 18px;
+            z-index: 3;
+        }
+        .navBacgroundContact {
+            background: linear-gradient(359.45deg, #4A99D3 -24.57%, rgba(74, 153, 211, 0) 76.31%), #FFFFFF;
+            opacity: 0.2;
+            transform: rotate(-180deg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 609px;
+            z-index: 1;
+        }
+        /*nav_end____________*/
+
+        /*footer_____________*/
+        .footer {
+            z-index: 3;
+            background: #4A99D3;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 350px;
+            color: rgba(255, 255, 255, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footerTop {
+            width: 100%;
+            height: 292px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 55px 0 0 0;
+        }
+
+        .footerTop div {
+            font-size: 34px;
+        }
+
+        .footerLinks {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 33px;
+        }
+
+        .footerLinks li a {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .footerLinksHead {
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: underline;
+            margin: 0 0 3px 0;
+        }
+
+        .footerOthers {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 33px;
+        }
+
+        .footerOthers li a {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .footerOthersHead {
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: underline;
+            margin: 0 0 3px 0;
+        }
+
+        .footerProducts {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 33px;
+        }
+
+        .footerProducts li a {
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .footerProductsHead {
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: underline;
+            margin: 0 0 3px 0;
+        }
+
+        .formFooter {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .formFooter p {
+            width: 364px;
+            margin: 0 0 20px 0;
+            line-height: 26px;
+        }
+
+        .formFooter input {
+            height: 50px;
+            width: 268px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            font-size: 14px;
+            padding: 18px 10px;
+        }
+
+        .formFooter button {
+            height: 50px;
+            width: 116px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            font-size: 18px;
+            color: rgba(74, 153, 211, 1);
+            font-weight: 700;
+        }
+
+        .footerBottom {
+            width: 100%;
+            height: 57px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        .footerBottom p {
+            margin: 0 0 0 9%;
+            font-weight: 700;
+        }
+
+        .footerBottom div {
+            margin: 0 8.62% 0 0;
+            top: 90%;
+        }
+
+        .footerBottom div a {
+            margin: 0 10px;
+        }
+
+        /*footer_end_____________________*/
+        .bodyContactus {
+            position: relative;
+            width: 100%;
+            height: 1458px;
+        }
+
+        /*___contactContein_________________*/
+        .contactContent {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .contactContein {
+            width: 958px;
+            height: 638px;
+            z-index: 3;
+            background-color: #FFFFFF;
+            box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+            border-radius: 10px;
+            margin: -320px 0 0 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactconteinTitle {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0 0 0;
+        }
+
+        .contactConteincontent {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 60px 0 60px;
+        }
+
+        .contactconteinTitle h3 {
+            display: block;
+            padding: 5px;
+            color: rgba(74, 153, 211, 1);
+            border-bottom: 2px #4A99D3 solid;
+            width: 168px;
+            height: 40px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 24.91px;
+        }
+
+        .contactForm {
+            height: 490px;
+            width: 422px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0 0 0;
+        }
+
+        .contactForm h4 {
+            color: rgba(15, 0, 26, 1);
+            font-size: 20px;
+            font-weight: 500;
+            Line-height: 20, 76px;
+        }
+
+        .contactForm p {
+            width: 48px;
+            height: 17px;
+            background-color: #FFFFFF;
+            font-size: 16px;
+            color: rgba(15, 0, 26, 1);
+        }
+
+        .contactForm input {
+            height: 50px;
+            width: 422px;
+            border: 1.2px solid #B4BEC8;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 17px 14px;
+        }
+
+        .contactForm textarea {
+            height: 137px;
+            width: 422px;
+            border: 1.2px solid #B4BEC8;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin: 15px 0 12px 0;
+            padding: 17px 14px;
+        }
+
+        .contactFormButton {
+            height: 50px;
+            width: 422px;
+            background: #4A99D3;
+            border-radius: 4px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            line-height: 18, 68px;
+        }
+
+        .contactConteinRight {
+            height: 491px;
+            width: 346px;
+            font-size: 16px;
+            color: rgba(15, 0, 26, 1);
+            line-height: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 65px 0 0 0;
+        }
+
+        .contactConteinAdress {
+            display: inline-block;
+            margin: 55px 0px 0 40px;
+            width: 312px;
+
+        }
+
+        .contactConteinAdress::before {
+            content: "";
+            background-image: url('../img/adress.svg');
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 20px 20px;
+            padding: 14px;
+            margin: 0 0 0 -42px;
+            position: absolute;
+
+        }
+
+        .contactConteinPhone::before {
+            content: "";
+            background-image: url('../img/PhoneBlack.svg');
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 20px 20px;
+            padding: 14px;
+            margin: 30px 14px 0 0;
+        }
+
+        .contactConteinMail::before {
+            content: "";
+            background-image: url('../img/mailBlack.svg');
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 20px 20px;
+            padding: 14px;
+            margin: 30px 14px 0 0;
+        }
+
+        .contactsoclinks {
+            display: flex;
+            justify-content: space-between;
+            width: 115px;
+        }
+
+        .contactConteinRight a {
+            display: block;
+            margin: 0 25px 0 0;
+        }
+
+        .contactContein::before {
+            content: "";
+            display: block;
+            position: relative;
+            top: -77px;
+            left: 881px;
+            z-index: 1;
+            height: 154px;
+            width: 154px;
+            background-image: url('../img/DottedSquare.png');
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+            background-size: 154px 154px;
+            overflow: visible;
+            border: greenyellow 1px solid;
+        }
+
+        .contactContein::after {
+            content: "";
+            position: relative;
+            top: -77px;
+            left: -77px;
+            display: block;
+            z-index: 1;
+            height: 154px;
+            width: 154px;
+            background-image: url('../img/DottedSquare.png');
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+            background-size: 154px 154px;
+            border: red 1px solid;
+        }
+
+        .contactSquareBlueLeft {
+            background-image: url("../img/squaresBlueDown.png");
+            position: absolute;
+            z-index: 1;
+            top: 959px;
+            left: 0px;
+            height: 199px;
+            width: 190px;
+        }
+
+        .contactSquareOrangeRight {
+            background-image: url("../img/squaresOrangeRight.png");
+            position: absolute;
+            z-index: 1;
+            top: 959px;
+            right: 0;
+            height: 199px;
+            width: 190px;
+        }
+    </style>
 </head>
 
 <body>
