@@ -102,7 +102,6 @@
     position: relative;
     height: 1475px;
     width: 100%;
-    border: 1px solid red;
 }
 .homeSquaresBlueUp{
     background-image: url("../img/squaresBlueUp.png");
@@ -117,51 +116,133 @@
     z-index: 1;
     height: 199px;
     width: 190px;
+    position: relative;
+    top: -198px;
+}
+.whatwedocontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .homeConteinWhatwedo h2{
     position: absolute;
     top: 150px;
-    left: 245px;
+    align-self: flex-start;
     height: 138px;
-    width: 395px;
+    width: 400px;
     font-size: 36px;
     font-weight: 500;
     color: rgba(38, 0, 65, 1);
     line-height: 46px;
     letter-spacing: 0.05em;
 }
-.homeConteinWhatwedoSend{
-    position: absolute;
+.whatwedoColumn1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 485px;
+    height: 100%;
+}
+.homeConteinWhatwedoReceive{
+    position: relative;
     z-index: 2;
-    top: 162px;
-    left: 815px;
     height: 525px;
     width: 380px;
     background: #FFFFFF;
     box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
     border-radius: 10px;
+}
+.homeConteinWhatwedoReceive img{
+    z-index: 3;
+    align-self: center;
+}
+.homeDottedLeft{
+    background-image: url("../img/DottedSquare.png");
+    position: relative;
+    right: 305px;
+    bottom: 312px;
+    z-index: 1;
+    height: 153.44px;
+    width: 153.44px;
+}
+.whatwedoColumn2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 635px;
+    height: 100%;
+    align-items: center;
+}
+.homeConteinWhatwedoSend{
+    position: relative;
+    z-index: 2;
+    height: 525px;
+    width: 380px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+    border-radius: 10px;
+    margin: 60px 0;
+}
+.homeDottedRight{
+    background-image: url("../img/DottedSquare.png");
+    position: relative;
+    top: 125px;
+    left: 193px;
+    z-index: 2;
+    height: 153.44px;
+    width: 153.44px;
+}
+.homeConteinWhatwedoBuy{
+    position: relative;
+    z-index: 2;
+    height: 525px;
+    width: 380px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+    border-radius: 10px;
+    margin: 60px 0;
+}
+.homeConteinWhatwedoBuy img{
+    z-index: 3;
+    align-self: center;
+}
+.homeDottedRightMid{
+    background-image: url("../img/DottedSquare.png");
+    position: relative;
+    bottom: 110px;
+    left: 193px;
+    z-index: 1;
+    height: 153.44px;
+    width: 153.44px;
+}
+.homeConteinWhatwedoWindow{
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 48px;
 }
 .homeConteinWhatwedoWindow img{
     display: block;
-    position: absolute;
-    top: -12px;
-    left: 78px;
+    position: relative;
+    align-self: center;
     z-index: 3;
     width: 224px;
 }
 .homeConteinWhatwedoWindow h3{
-    position: absolute;
-    top: 246px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #0F001A;
+    z-index: 3;
 }
 .homeConteinWhatwedoWindow p{
-    position: absolute;
-    top: 292px;
     height: 103px;
     width: 284px;
     font-weight: 400;
@@ -169,11 +250,11 @@
     line-height: 26px;
     color: #0F001A;
     opacity: 0.6;
+    z-index: 3;
 }
 .homeConteinWhatwedoWindow a p{
     display: block;
-    position: absolute;
-    top: 447px;
+    height: 30px;
     font-family: Objective;
     font-style: normal;
     font-weight: 500;
@@ -181,6 +262,7 @@
     line-height: 30px;
     color: #4A99D3;
     width: 100px;
+    z-index: 3;
 }
 .homeConteinWhatwedoWindow a p::after{
     content: "";
@@ -190,39 +272,7 @@
     background-size: 16px 16px;
     padding: 14px; /*__ПОЧЕМУ_БЕЗ_ПАДДИНГА_НЕ_ОТОБРАЖАЕТСЯ_???__*/
     margin: 0 0 0 25px;
-}
-.homeConteinWhatwedoReceive{
-    position: absolute;
-    z-index: 2;
-    top: 458px;
-    left: 330px;
-    height: 525px;
-    width: 380px;
-    background: #FFFFFF;
-    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
-    border-radius: 10px;
-    padding: 48px;
-}
-
-.homeConteinWhatwedoBuy{
-    position: absolute;
-    z-index: 2;
-    top: 800px;
-    left: 815px;
-    height: 525px;
-    width: 380px;
-    background: #FFFFFF;
-    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
-    border-radius: 10px;
-    padding: 48px;
-}
-.homeConteinWhatwedoReceive img{
-    left: 65px;
-    top:48px;
-}
-.homeConteinWhatwedoBuy img{
-    top: 49px;
-    left: 70px;
+    z-index: 3;
 }
 .homeHowitworks{
     position: absolute;
@@ -418,35 +468,6 @@
 }
 /*homeContein_ end______________*/
 /*bacgroundHome_________________*/
-
-.homeDottedRight{
-    background-image: url("../img/DottedSquare.png");
-    position: absolute;
-    z-index: 1;
-    top: 853px;
-    right: 167.56px;
-    height: 153.44px;
-    width: 153.44px;
-}
-.homeDottedLeft{
-    background-image: url("../img/DottedSquare.png");
-    position: absolute;
-    z-index: 1;
-    top: 1442px;
-    left: 255px;
-    height: 153.44px;
-    width: 153.44px;
-}
-.homeDottedRightMid{
-    background-image: url("../img/DottedSquare.png");
-    position: absolute;
-    z-index: 1;
-    top: 2011px;
-    right: 172.56px;
-    height: 153.44px;
-    width: 153.44px;
-}
-
 .homeWoman{
     background-image: url("../img/photoGirl.png");
     position: absolute;
