@@ -272,7 +272,7 @@
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: 16px 16px;
-    padding: 14px; /*__ПОЧЕМУ_БЕЗ_ПАДДИНГА_НЕ_ОТОБРАЖАЕТСЯ_???__*/
+    padding: 14px;
     margin: 0 0 0 25px;
     z-index: 3;
 }
@@ -460,11 +460,62 @@
     color: #0F001A;
 }
 .homeConteinBottom{
-    position: absolute;
-    bottom: 589px;
-    right: 245px;
-    height: 230px;
-    width: 444px;
+    position: relative;
+    height: 697px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+.bottomphones{
+    position: relative;
+    width: ;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 2%;
+}
+.homePhoneBotLeft{
+    position: relative;
+    left: 30px;
+    z-index: 1;
+    height: 344px;
+    width: 180px;
+    background-image: url("../img/phone.png");
+    background-position: 44% 45%;
+    background-size: 200px 365px;
+    border-radius: 20px;
+}
+.homePhoneBotCentr{
+    position: relative;
+    z-index: 2;
+    height: 458.39px;
+    width: 240px;
+    background-image: url("../img/phone.png");
+    background-position: 44% 45%;
+    background-size: 273px 485px;
+    border-radius: 25px;
+}
+.homePhoneBotRight{
+    position: relative;
+    right: 30px;
+    z-index: 1;
+    height: 344px;
+    width: 180px;
+    background-image: url("../img/phone.png");
+    background-position: 44% 45%;
+    background-size: 200px 365px;
+    border-radius: 20px;
+}
+.bottomContein{
+    position: relative;
+    height: 300px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
 }
 .homeConteinBottom h3{
     height: 26px;
@@ -486,59 +537,18 @@
     color: #0F001A;
     opacity: 0.5;
 }
+.bottomLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 .homeConteinBottom a{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     height: 53px;
     width: 165px;
     background: #000000;
     border-radius: 5px;
     padding: 11px 18px;
-}
-.homeGoogleBot{
-    left: 37px;
-}
-.homeAppstoreBot{
-    right: 37px;
-}
-/*homeContein_ end______________*/
-/*bacgroundHome_________________*/
-
-.homePhoneBotLeft{
-    position: absolute;
-    z-index: 1;
-    bottom: 531px;
-    left: 167px;
-    height: 344px;
-    width: 180px;
-    background-image: url("../img/phone.png");
-    background-position: 44% 45%;
-    background-size: 200px 365px;
-    border-radius: 20px;
-}
-.homePhoneBotCentr{
-    position: absolute;
-    z-index: 2;
-    bottom: 474px;
-    left: 305px;
-    height: 458.39px;
-    width: 240px;
-    background-image: url("../img/phone.png");
-    background-position: 44% 45%;
-    background-size: 273px 485px;
-    border-radius: 25px;
-}
-.homePhoneBotRight{
-    position: absolute;
-    z-index: 1;
-    bottom: 531px;
-    left: 503px;
-    height: 344px;
-    width: 180px;
-    background-image: url("../img/phone.png");
-    background-position: 44% 45%;
-    background-size: 200px 365px;
-    border-radius: 20px;
 }
 .homeSquaresRedRight{
     background-image: url("../img/squaresRedRightBottom.svg");
@@ -558,5 +568,3 @@
     height: 199px;
     width: 190px;
 }
-/*bacgroundHome_end_____________*/
-/*home_end______________________*/
