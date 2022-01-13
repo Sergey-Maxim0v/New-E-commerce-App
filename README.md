@@ -8,6 +8,9 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Sergey-Maxim0v/New-E-commerce-App)
 
+
+Посмотреть проект можно на [GitHub-Pages](https://sergey-maxim0v.github.io/New-E-commerce-App/)
+
 ---
 ### Цель проекта:
 тренировка верстки, с использованием:
